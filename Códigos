@@ -1,0 +1,128 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Pleito {
+
+        public static void main(String[] args) throws IOException {
+            Scanner input = new Scanner(System.in);
+            int habitantes;
+            int brancos;
+            int nulos;
+            int validos;
+           
+            habitantes = input.nextInt();
+            brancos = input.nextInt();
+            nulos = input.nextInt();
+            validos = input.nextInt();
+
+
+           int pBrancos= (brancos * 100)/habitantes;
+           int pNulos = (nulos * 100)/habitantes;
+           int pValidos = (validos * 100)/habitantes;
+
+
+            System.out.println("Brancos: "+pBrancos+"%");
+
+            System.out.println("Nulos: "+pNulos+"%");
+
+            System.out.println("Validos: "+pValidos+"%");
+        }
+    }
+
+
+
+
+
+import java.util.Scanner;
+public class Media {
+    public static void main(String[] args) {
+        Scanner leitor = new Scanner(System.in);
+
+        int soma =0;
+        double media = 0;
+        
+        // recebe a 1º idade
+        System.out.println("Digite a 1ª Idade:");
+        int idade1 = leitor.nextInt();
+        soma += idade1;
+                        
+        // recebe a 2º idade
+        System.out.println("Digite a 2ª Idade:");
+        int idade2 = leitor.nextInt();
+        soma += idade2;
+          
+           
+        // recebe a 3º idade
+        System.out.println("Digite a 3ª Idade:");
+        int idade3 = leitor.nextInt();
+        soma += idade3;
+         
+                                  
+        // calcula a média das idades
+        //soma = idade1 + idade2 + idade3;
+        media = soma / 3;
+            
+            
+        if ((media>=0)&&(media<=25)){
+        System.out.println("Jovem!");
+        } else if ((media>=26)&&(media<=60)) {
+        System.out.println("Adulta!");
+        } else if (media>60) {
+        System.out.println("Idosa!");
+        }
+            
+        leitor.close();
+    }
+    
+}
+
+
+import java.util.Scanner;
+public class Media {
+    public static void main(String[] args) {
+        Scanner leitor = new Scanner(System.in);
+
+        int idade1 = 7;
+        int idade2 = 14;
+        int idade3 = 22;
+
+        int idadeTurma1 = 70;
+        int idadeTurma2 = 60;
+        int idadeTurma3 = 61;
+
+        double turma1 = ((idade1 + idade2 + idade3)/3);
+        // recebe a 1º idade
+        System.out.println("Digite a 1ª Idade:");
+        int idade1 = leitor.nextInt();
+        soma += idade1;
+            
+        if ((turma1>=0)&&(turma1<=25)){
+        System.out.println("Jovem!");
+        } else if ((turma1>=26)&&(turma1<=60)) {
+        System.out.println("Adulta!");
+        } else if (turma1>60) {
+        System.out.println("Idosa!");
+        }
+
+        double turma2 = ((idadeTurma1 + idadeTurma2+ idadeTurma3)/3);
+        //System.out.println(idadeTurma1);
+        //System.out.println(idadeTurma2);
+        //System.out.println(idadeTurma3);
+
+        if ((turma2>=0)&&(turma2<=25)){
+        System.out.println("Jovem!");
+        } else if ((turma2>=26)&&(turma2<=60)) {
+        System.out.println("Adulta!");
+        } else if (turma2>60) {
+        System.out.println("Idosa!");
+        }
+        leitor.close();
+    }
+}
+    
+
+
+
+
+
+
